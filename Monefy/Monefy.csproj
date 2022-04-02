@@ -1,0 +1,130 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Source\Images\add-btn-hi.png" />
+    <None Remove="Source\Images\basket.jpg" />
+    <None Remove="Source\Images\basket2.png" />
+    <None Remove="Source\Images\bus.png" />
+    <None Remove="Source\Images\buttons-clip-art-161.png" />
+    <None Remove="Source\Images\car.jpg" />
+    <None Remove="Source\Images\car2.jpg" />
+    <None Remove="Source\Images\clothes.png" />
+    <None Remove="Source\Images\clothes2.png" />
+    <None Remove="Source\Images\clothes3.png" />
+    <None Remove="Source\Images\conect.png" />
+    <None Remove="Source\Images\dog.png" />
+    <None Remove="Source\Images\glass.png" />
+    <None Remove="Source\Images\house.png" />
+    <None Remove="Source\Images\logomonefy-removebg-preview.png" />
+    <None Remove="Source\Images\minus2.png" />
+    <None Remove="Source\Images\plus4.png" />
+    <None Remove="Source\Images\present.png" />
+    <None Remove="Source\Images\present3.jpg" />
+    <None Remove="Source\Images\r2.jpg" />
+    <None Remove="Source\Images\restaurant.png" />
+    <None Remove="Source\Images\rightarrow.png" />
+    <None Remove="Source\Images\soprt3.png" />
+    <None Remove="Source\Images\sport.jpg" />
+    <None Remove="Source\Images\temp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Source\Images\clothes.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\clothes2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\clothes3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Source\Images\present3.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Source\Images\add-btn-hi.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\basket.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\basket2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\bus.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\buttons-clip-art-161.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\car.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\car2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\conect.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\dog.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\glass.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\house.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Source\Images\logomonefy-removebg-preview.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\minus2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\plus4.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\present.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\r2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\restaurant.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\rightarrow.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\soprt3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\sport.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Source\Images\temp.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MvvmLightLibsStd10" Version="5.4.1.1" />
+    <PackageReference Include="SimpleInjector" Version="5.3.3" />
+  </ItemGroup>
+
+</Project>

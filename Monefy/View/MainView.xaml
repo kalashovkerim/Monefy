@@ -1,0 +1,68 @@
+﻿<Window x:Class="Monefy.View.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Monefy.View"
+        mc:Ignorable="d"
+        Title="MainView" Height="800" Width="500" Background="#bed3c3" ResizeMode="NoResize">
+
+    <Grid HorizontalAlignment="Left" Width="500">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height ="4*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="/Source/Images/basket2.png" Margin="30,35,400,470" Grid.Row="1"/>
+        <Label Grid.Row ="1" Content="{Binding Nutrition}" Margin="102,48,250,483"/>
+
+        <Image Source="/Source/Images/car2.jpg" Margin="30,105,400,400" Grid.Row="1"/>
+        <Label Grid.Row ="1" Content="{Binding Automobile}" Margin="100,118,252,413"/>
+
+        <Image Source="/Source/Images/conect.png" Margin="30,175,400,330" Grid.Row="1"/>
+        <Label Grid.Row ="1" Content="{Binding Connection}" Margin="100,188,252,343"/>
+
+        <Image Source="/Source/Images/dog.png" Margin="30,254,400,254" Grid.Row="1"/>
+        <Label Grid.Row ="1" Content="{Binding Pets}" Margin="102,266,250,266"/>
+
+        <Image Source="/Source/Images/glass.png" Margin="30,341,400,168" Grid.Row="1"/>
+        <Label Grid.Row ="1" Content="{Binding Entertainment}" Margin="102,353,250,180"/>
+
+        <Image Source="/Source/Images/present3.jpg" Margin="30,415,397,89" Grid.Row="1"/>
+        <Label Grid.Row ="1" Content="{Binding Presents}" Margin="102,430,250,104"/>
+        
+        <Image Source="/Source/Images/soprt3.png" Margin="340,37,90,472" Grid.Row="1"/>
+        <Label Grid.Row ="1" Content="{Binding Sport}" Margin="415,38,-63,496"/>
+
+        <Image Source="/Source/Images/r2.jpg" Margin="338,107,88,402" Grid.Row="1"/>
+        <Label Grid.Row ="1" Content="{Binding Restaurant}" Margin="416,120,-64,415"/>
+
+        <Image Source="/Source/Images/bus.png" Margin="335,175,85,330" Grid.Row="1"/>
+        <Label Grid.Row ="1" Content="{Binding Transport}" Margin="413,190,-61,345"/>
+
+        <Image Source="/Source/Images/house.png" Margin="335,253,85,253" Grid.Row="1"/>
+        <Label Grid.Row ="1" Content="{Binding House}" Margin="419,269,-67,266"/>
+        
+        <Image Source="/Source/Images/clothes3.png" Margin="324,329,74,156" Grid.Row="1"/>
+        <Label Grid.Row ="1" Content="{Binding Clothes}" Margin="419,354,-67,181"/>
+        
+        <Image Source="/Source/Images/temp.png" Margin="330,412,80,86" Grid.Row="1"/>
+        <Label Grid.Row ="1" Content="{Binding Health}" Margin="421,430,-69,105"/>
+        
+        
+        <Image Height="100" Width="100" Stretch="Fill" VerticalAlignment="Center" Source="/Source/Images/logomonefy-removebg-preview.png" Margin="200,0,200,0"/>
+
+
+        <Button Command="{Binding IncomeBtn}" Background="Transparent" Grid.Row="2" Margin="78,5,0,5" HorizontalAlignment="Left" Width="138">
+            <Image Source="\Source\Images\plus4.png" Height="104" Width="96"/>
+        </Button>
+
+        <Button Command="{Binding ExpenseBtn}" Background="Transparent" Grid.Row="2" Margin="284,5,80,5">
+            <Image Source="\Source\Images\minus2.png" Height="113" Width="104"/>
+        </Button>
+
+        <ContentControl Grid.RowSpan="3" Content="{Binding CurrentViewModel}"/>
+
+    </Grid>
+</Window>

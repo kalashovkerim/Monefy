@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="Monefy.View.IncomesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Monefy.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="500" Background="#bed3c3">
+
+    <Grid HorizontalAlignment="Left" Width="500">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height ="224*"/>
+            <RowDefinition Height="369*"/>
+            <RowDefinition Height="148*"/>
+        </Grid.RowDefinitions>
+
+
+        <Image Height="100" Width="100" VerticalAlignment="Center" Source="/Source/Images/logomonefy-removebg-preview.png" Margin="200,0,200,0"/>
+
+        <Button Command="{Binding BackBtn}" Grid.Row="0"  BorderBrush="Transparent" Background="Transparent" Margin="425,5,23,5">
+            <Image Source="/Source/Images/rightarrow.png" Height="39" Width="49" RenderTransformOrigin="0.5,0.5"/>
+        </Button>
+
+        <Label Background="#4a919e" Foreground= "White" Grid.Row="1" Content="Value" FontFamily="Calibry" FontSize="20" Margin="45,64,161,102"/>
+        <TextBox Background="Transparent" Grid.Row="1" Margin="123,67,175,105"/>
+
+        <Label Background="#4a919e" Foreground= "White" Grid.Row="2" Content="Category" FontFamily="Calibry" FontSize="20" Margin="43,16,149,285"/>
+        <ComboBox  Background="Green" Grid.Row="2" Margin="163,23,163,291"/>
+
+        <Button Grid.Row="2" BorderThickness="0.000001" BorderBrush="Transparent" Background="Transparent" Margin="28,183,308,88">
+            <Image Source="/Source/Images/add-btn-hi.png" Height="59" Width="152"/>
+        </Button>
+
+        <ContentControl Grid.RowSpan="4" Content="{Binding CurrentViewModel}"/>
+
+    </Grid>
+</UserControl>
